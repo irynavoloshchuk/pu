@@ -264,6 +264,9 @@ body {
 	font-size: 14px;
 	font-weight: 700;
 	transition: transform 0.3s ease;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
 }
 .doing-card:hover  {   
 	transform: scale(1.02);
@@ -349,17 +352,23 @@ body {
 .icon-link {
 	display: block;
 }
-.icon-link svg{
+.icon-link svg {
 	width: 44px;
 	height:44px;
-
-	/* transition: fill .2s linear; */
+	fill: rgba(175, 177, 184, 1);
+	background: #fff;
+	border-radius: 50%;
+	transition: fill .2s linear;
 }
 
-.icon-link:hover svg {
-	fill: #2196F3;
-	
+.icon-link:hover svg, .join .icon-link:hover svg  {
+	fill: #fff;
+	border-radius: 50%;
+	background: #2196F3;
 }
+
+
+
 
 /* Regular customers section */
 
@@ -385,17 +394,30 @@ body {
 
 }
 
-
-
-.customer-item svg {
-	width: 170px;
-	height: 92px;
-	fill: none;
+.customer-link {
+	display: block;
 }
 
-.customer-item svg:hover {
 
+.customer-link svg {
+	width: 170px;
+	height: 92px;
+	fill: rgba(175, 177, 184, 1);
+	border: 1px solid  rgba(175, 177, 184, 1);
+	border-radius: 4px;
+
+	
+
+	transition: fill .2s linear;
+}
+
+
+.customer-link:hover svg{
 fill: #2196F3;
+border: 1px solid #2196F3;
+border-radius: 4px;
+
+
 }
 
 
@@ -407,14 +429,29 @@ fill: #2196F3;
 	padding: 60px 0;
 	
 	
+	
+	
 }
 
 .footer-container {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 9px;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	gap: 90px;
+	
+
+	
 }
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	align-items: flex-start;
+
+}
+
 
 .footer-logo {
 	margin: 0 0 11px;
@@ -433,6 +470,27 @@ fill: #2196F3;
 .footer a:hover {
 	color: #2196F3;
 }
+
+.join {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.join .icon-link svg {
+		width: 44px;
+		height:44px;
+		fill: rgba(175, 177, 184, 1);
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		transition: fill .2s linear;
+	}
+.join p {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
 
 /* Portgolio page */
 
