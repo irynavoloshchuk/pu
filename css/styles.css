@@ -346,12 +346,58 @@ body {
 	padding-top: 16px;
 }
 
-.social-icon svg {
+.icon-link {
+	display: block;
+}
+.icon-link svg{
 	width: 44px;
 	height:44px;
-	fill: #2196F3;
+
 	/* transition: fill .2s linear; */
 }
+
+.icon-link:hover svg {
+	fill: #2196F3;
+	
+}
+
+/* Regular customers section */
+
+.customers {
+ 
+
+    padding: 94px 0;
+}
+
+.customers-title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+ .customers-icons-list {
+
+	display: flex;
+	margin-right: auto;
+	gap: 30px;
+	flex-direction: row;
+	justify-content: center;
+
+
+}
+
+
+
+.customer-item svg {
+	width: 170px;
+	height: 92px;
+	fill: none;
+}
+
+.customer-item svg:hover {
+
+fill: #2196F3;
+}
+
 
 
 /* FOOTER */
@@ -359,7 +405,7 @@ body {
 .footer {
 	background: #2F303A;
 	padding: 60px 0;
-	margin-top: 92px;
+	
 	
 }
 
