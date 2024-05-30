@@ -631,6 +631,10 @@ border-radius: 4px;
 	.team-card img {
 		height: 488px;
 	}
+	.customer-item {
+		flex: 0 0 5%;
+		
+	}
 
 }
 	
@@ -668,12 +672,15 @@ border-radius: 4px;
 		
 		gap: 10px;
 		row-gap: 10px;
-		justify-content: center;
+		justify-content:start;
+		
+	
+	
 		
 		
 	}
 	.customer-item {
-		flex: 0 1 10%;
+		flex: 0 0 5%;
 		
 	}
 
