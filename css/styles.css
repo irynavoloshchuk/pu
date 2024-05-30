@@ -330,15 +330,7 @@ flex: 1 1 20%;
 
 }
 
-.team-card .team-member-info {
-	/* border-radius: 4px;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-	
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12); */
-	
-}
 
 .team-member-info h3 {
     font-size: 16px;
@@ -400,7 +392,7 @@ flex: 1 1 20%;
  .customers-icons-list {
 
 	display: flex;
-	margin-right: auto;
+	margin:0 auto;
 	gap: 30px;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -672,8 +664,17 @@ border-radius: 4px;
 		height: 180px;
 	}
 
+	.customers-icons-list {
+		
+		gap: 10px;
+		row-gap: 10px;
+		justify-content: center;
+		
+		
+	}
 	.customer-item {
-		flex: inherit;
+		flex: 0 1 10%;
+		
 	}
 
 	.portfolio-item {
